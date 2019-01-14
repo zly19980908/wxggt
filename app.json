@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "悬壶课堂",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "首页",
+        "iconPath": "image/tabbar-main.png",
+        "selectedIconPath": "image/tabbar-main.png"
+      },
+      {
+        "pagePath": "pages/first/first",
+        "text": "中医论坛",
+        "iconPath": "image/1.png",
+        "selectedIconPath": "image/1.png"
+      },
+      {
+        "pagePath": "pages/first/first",
+        "text": "我的学习",
+        "iconPath": "image/tabbar-study.png",
+        "selectedIconPath": "image/tabbar-study.png"
+      },
+      {
+        "pagePath": "pages/first/first",
+        "text": "个人中心",
+        "iconPath": "image/tabbar-person.png",
+        "selectedIconPath": "image/tabbar-person.png"
+      }
+    ]
+  }
+}

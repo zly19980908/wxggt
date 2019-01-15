@@ -1,0 +1,4 @@
+<form bindsubmit="formSubmit">
+<view>HelloWorld!</view> 
+<button form-type='submit'>Submit</button>
+</form>

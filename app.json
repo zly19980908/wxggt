@@ -6,12 +6,15 @@
     
     
   ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "悬壶课堂",
+"window": {
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#5CACEE",
+  "navigationBarTitleText": "悬壶课堂",
+  "backgroundColor": "#5CACEE" ,
     "navigationBarTextStyle": "white"
-  },
+},
+
   "tabBar": {
     "color": "#dddddd",
     "selectedColor": "#3cc51f",

@@ -2,15 +2,17 @@
   <!--搜索栏-->
   <view class="search">
     <view class="df search_arr">
-      <icon class="searchcion" size='20' type='search'></icon>
-      <input class="searchinput" disabled placeholder='查找' placeholder-class='search-pla' />
+      <view class='searchcion'>
+        <icon class="" size='40rpx' type='search'></icon>
+      </view>
+      <input class="searchinput" />
     </view>
   </view>
 </view>
 <view class="swper">
   <!-- 海报-->
-  <swiper indicator-dots='true' autoplay='true' interval='2000'>
-    <swiper-item>
+  <swiper indicator-dots='true' autoplay='true' interval='2000' class='swper'>
+    <swiper-item class="swper-item">
       <image src='../../image/test1.jpg' class='swperimage'></image>
     </swiper-item>
     <swiper-item>
@@ -48,16 +50,85 @@
 </view>
 <!--视屏区 -->
 <view class='viewcontrl'>
-  <view class="window_view">
-    <scroll-view class="scroll-view_H" scroll-x="true">
-      <view id="local" class="scroll-view-item_H local">
-        <view class='box'>
-          <image class='' src='../../image/11.png'></image>
-        </view>
-        <view class='box'>
-          <text>精选好课程</text>
-        </view>
+  <view class='view1'>
+    <image src='../../image/11.png'></image>
+    <text>精彩课程</text>
+    <text class='view1-text1'>更多</text>
+  </view>
+  <view class='view2'>
+    <view>
+      <video src='../../testvideo/test1.mp4'></video>
+      <video src='../../testvideo/test2.mp4'></video>
+    </view>
+    <view>
+      <view>
+        <text class="text1">迷人的香水</text>
+        <text class="text2">吃货</text>
       </view>
-    </scroll-view>
+    </view>
+  </view>
+</view>
+<!--话题区-->
+<view class='viewcontrl1'>
+  <view class='view1'>
+    <image src='../../image/11.png'></image>
+    <text>热门话题</text>
+  </view>
+  <view class='view3'>
+    <text id="v1" bindtap='changeText' class='{{v1}}'>古籍top5</text>
+    <text id="v2" bindtap='changeText' class='{{v2}}'>医案top5</text>
+    <text id="v3" bindtap='changeText' class='{{v3}}'>方剂top5</text>
+  </view>
+  <view class='view4'>
+    <image src='../../image/top1.png'></image>
+    <text>素问</text>
+  </view>
+  <view class='view4'>
+    <image src='../../image/top2.png'></image>
+    <text>伤寒论</text>
+  </view>
+  <view class='view4'>
+    <image src='../../image/top3.png'></image>
+    <text>四圣兴源</text>
+  </view>
+  <view class='view4'>
+    <image src='../../image/top4.png'></image>
+    <text>本草钢木</text>
+  </view>
+  <view class='view4'>
+    <image src='../../image/top5.png'></image>
+    <text>金匮要约</text>
+  </view>
+  <view>
+    <text class='view4_text'>查看更多排行榜>></text>
+  </view>
+</view>
+<view class='viewcontrl'>
+  <view class='view1'>
+    <image src='../../image/11.png'></image>
+    <text>直播回顾区</text>
+    <text class='view1-text1'>更多</text>
+      <view class='view2'>
+    <view>
+      <video src='../../testvideo/test1.mp4'></video>
+      <video src='../../testvideo/test2.mp4'></video>
+    </view>
+    <view>
+      <view>
+        <text class="text1">迷人的香水</text>
+        <text class="text2">吃货</text>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>
+<view class=''>
+  <view class='view1'>
+    <image src='../../image/11.png'></image>
+    <text>精彩小视频</text>
+    <text class='view1-text2'>进入专区</text>
+    <video src='../../testvideo/test1.mp4' class='video1'></video>
+ 
+    <video src='../../testvideo/test2.mp4' class='video1'></video>
   </view>
 </view>

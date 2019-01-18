@@ -1,26 +1,25 @@
 {
   "pages": [
+    "pages/audio/audio",
     "pages/first/first",
     "pages/index/index",
     "pages/logs/logs"
     
-    
   ],
-"window": {
-  "enablePullDownRefresh": true,
-  "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#5CACEE",
-  "navigationBarTitleText": "悬壶课堂",
-  "backgroundColor": "#5CACEE" ,
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5CACEE",
+    "navigationBarTitleText": "悬壶课堂",
+    "backgroundColor": "#5CACEE",
     "navigationBarTextStyle": "white"
-},
-
+  },
   "tabBar": {
     "color": "#dddddd",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "position":"bottom",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/first/first",

@@ -1,203 +1,208 @@
 /* pages/first/first.wxss */
+
 .searchinput {
- 
   background-color: #5cacee;
- 
 }
- 
 
- 
 .bg {
- 
   background-color: #5cacee;
- 
 }
- 
 
- 
 .search {
- 
   width: 80%;
- 
   background-color: #5cacee;
- 
 }
- 
 
- 
 .search_arr {
- 
-  border: 1.5px solid #f5fffa;
- 
-  border-radius: 10rpx;
- 
-  margin-left: 120rpx;
- 
+  border: 1pt solid #f5fffa;
+  border-radius: 5vh;
+  margin-left: 150rpx;
 }
- 
 
- 
 .search_arr input {
- 
-  margin-left: 10rpx;
- 
-  margin-right: 68rpx;
- 
-  height: 60rpx;
- 
-  border-radius: 5px;
- 
+  margin-left: 10vh;
+  margin-right: 60vh;
+  height: 5vh;
+  border-radius: 5vh;
 }
- 
 
- 
 .bc_text {
- 
-  line-height: 68rpx;
- 
-  height: 68rpx;
- 
-  margin-top: 34rpx;
- 
+  line-height: 5vh;
+  height: 10vh;
+  margin-top: 5vh;
 }
- 
 
- 
 .searchcion {
- 
-  margin: 10rpx 10rpx 10rpx 500rpx;
- 
+  margin-left: 530rpx;
+  margin-top: 0.5%;
   position: absolute;
- 
-  left: 25rpx;
- 
+  left: 5rpx;
   z-index: 2;
- 
-  width: 20px;
- 
-  height: 20px;
- 
+  width: 40rpx;
+  height: 40vh;
   text-align: center;
- 
 }
- 
 
- 
-.search-pla {
- 
-  color: #f5fffa;
- 
-  size: 5px;
- 
-}
- 
-
- 
 .swper {
- 
-  margin-top: 2rpx;
- 
+  margin-top: 0.1vh;
   width: 100%;
- 
+  height: 30vh;
 }
- 
-.swper image{
- 
+
+.swper-item {
+  width: 100%;
+  height: 40vh;
+}
+
+.swper image {
   display: flex;
- 
   justify-content: center;
- 
-  width:450px;
- 
-  height: 200px;
- 
-}
- 
-
- 
-.window_view {
- 
-  height: 100%;
- 
-  display: flex;
- 
-  flex-direction: row;
- 
-  margin-left: 10px;
- 
-  margin-top: 10px;
- 
-}
- 
-
- 
-.scroll-view_H {
- 
-  height: 200rpx;
- 
-  white-space: nowrap;
- 
-}
- 
-
- 
-.scroll-view-item_H {
- 
-  width: 150rpx;
- 
-  height: 200rpx;
- 
-  display: inline-flex;
- 
-  margin-left: 30rpx;
- 
-  white-space: nowrap;
- 
-}
- 
-
- 
-.box {
- 
   width: 100%;
- 
   height: 100%;
- 
+}
+
+.window_view {
+  height: 20vh;
   display: flex;
- 
+  flex-direction: row;
+  margin-left: 12rpx;
+  margin-top: 0.1vh;
+}
+
+.scroll-view_H {
+  height: 18vh;
+  white-space: nowrap;
+  margin-top: 3vh;
+}
+
+.scroll-view-item_H {
+  width: 100rpx;
+  height: 20vh;
+  display: inline-flex;
+  margin-left: 66rpx;
+  white-space: nowrap;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
- 
 }
- 
 
- 
 .box image {
- 
- height: 60px;
- 
- width: 60px;
- 
+  height: 10vh;
+  width: 120rpx;
 }
- 
 
- 
 .box text {
- 
   margin-right: auto;
- 
-  margin-left:8px;
- 
-  margin-top: 5rpx;
- 
-  font: 20;
- 
+  margin-left: 15rpx;
+  margin-top: 0.1pt;
+  font: 25;
 }
- 
-.viewcontrl{
- 
-   border: 1.5px solid #E3E3E3;
- 
-   height: 200px;
- 
+
+.viewcontrl {
+  border: 1.5px solid #e3e3e3;
+  height: 40vh;
 }
- 
+
+.view1 {
+  width: 100%;
+  height: 10vh;
+  margin-left: 10rpx;
+}
+
+.view1 image {
+  margin-top: 1vh;
+  height: 5vh;
+  width: 20rpx;
+}
+
+.view1-text1 {
+  margin-left: 430rpx;
+}
+
+.view1-text2 {
+  margin-left: 350rpx;
+}
+
+.view2 {
+  width: 100%;
+  height: 40vh;
+  margin-left: 10rpx;
+}
+
+.view2 video {
+  width: 40%;
+  margin-left: 50rpx;
+  height: 20vh;
+}
+
+.text1 {
+  width: 40%;
+  margin-left: 80rpx;
+}
+
+.text2 {
+  width: 40%;
+  margin-left: 180rpx;
+}
+
+.view3 {
+  border-bottom: 1px solid #878f96;
+}
+
+.view3 text {
+  color: rgba(16, 16, 17, 0.712);
+  margin-left: 60rpx;
+}
+
+.view3text1 {
+  border-bottom: 2.5px solid rgb(211, 66, 22);
+}
+
+.view4 {
+  border-bottom: 0.5px solid #878f9681;
+}
+
+.viewcontrl1 {
+  border: 1.5px solid #e3e3e3;
+  height: 53vh;
+}
+
+.view4 image {
+  margin-top: 1vh;
+  margin-left: 20rpx;
+  height: 4vh;
+  width: 4vh;
+}
+
+.view4 text {
+  color: rgba(33, 36, 34, 0.966);
+  margin-left: 20rpx;
+  margin-bottom: 0.5vh;
+}
+
+.view4_text {
+  color: red;
+  display: flex;
+  text-align: center;
+  margin-left: 200rpx;
+}
+
+.video1 {
+  margin-left: 20rpx;
+  margin-top: 3vh;
+  width: 700rpx;
+  height: 90vh;
+  border-bottom: black
+}
+/*小视频渲染 */
+.viewVideo {
+  background-color: black;
+  width: 700rpx;
+  margin-left: 20rpx;
+  margin-top: 3vh;
+  height: 10vh;
+}

@@ -1,1 +1,229 @@
-/* pages/demo/demo.wxss */
+.search {
+  width: 80%;
+}
+/*主页*/
+.main{
+  position: absolute;  
+  width: 750rpx;  
+  height: 100%;  
+  background-color: white;  
+  z-index: 1; 
+}
+
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 100rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  justify-content: center;
+  align-content: center;
+}
+
+.search_arr input {
+  margin-left: 102rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+
+.sousuo {
+  margin-top: 10rpx;
+  width: 20%;
+  justify-content: center;
+  align-content: center;
+}
+
+.page_row {
+  display: flex;
+  flex-direction: row;
+  font-size: 40rpx;
+}
+
+.search_row {
+  display: flex;
+  flex-direction: row;
+  font-size: 42rpx;
+}
+
+.search_row view {
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+
+.active {
+  color: #09c;
+  border-bottom: 4px solid #09c;
+}
+
+.searchcion {
+  /*搜索图标*/
+  margin: 10rpx 10rpx 0rpx 20rpx;
+  position: absolute;
+  left: 25rpx;
+  z-index: 2;
+  width: 20rpx;
+  height: 60rpx;
+  text-align: center;
+}
+
+.text_recommended {
+  margin-top: 20rpx;
+  font-size: 45rpx;
+}
+
+swiper {
+  height: 520px;
+}
+
+swiper-item {
+  /*item和view都需要设置高度100%才可以*/
+  height: 100%;
+}
+
+scroll-view {
+  /*滑动窗口*/
+  height: 100%;
+}
+
+.video_row {
+  display: flex; /*流式布局*/
+  flex-direction: row;
+  border-bottom: 5rpx solid#e0e3da;
+}
+
+.video_column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+}
+
+.video_img {
+  width: 220rpx;
+  height: 170rpx;
+  display: flex;
+  justify-content: center; /*内容水平居中*/
+}
+
+image {
+  width: 180rpx;
+  height: 160rpx;
+}
+
+.video_detail {
+  display: flex;
+  width: 360rpx;
+  height: 170rpx;
+  margin-left: 40rpx;
+  font-size: 30rpx;
+  flex-direction: column;
+}
+
+.view_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.view_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.video_price {
+  font-size: 36rpx;
+  color: #09c;
+  width: 110rpx;
+  height: 170rpx;
+  display: flex;
+  text-align: center;
+}
+
+.video_nextpage {
+  display: flex;
+  font-size: 30rpx;
+  color: #d0d0d0;
+  justify-content: center;
+  padding: 10rpx 0 20rpx 0;
+  padding-bottom: 20rpx;
+}
+
+.svideo_like {
+  display: flex;
+  font-size: 30rpx;
+  text-align: end;
+}
+
+.view_row image {
+  padding-top: 3rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*分割线样式*/
+.divLine {
+  background: #e0e3da;
+  width: 100%;
+  height: 5rpx;
+  margin-top: 10rpx;
+}
+
+.text_gray {
+  color:#909090;
+}
+
+.text_42{
+  font-size: 42rpx;
+}
+
+.text_36{
+  font-size: 36rpx;
+}
+
+.text_30{
+  font-size: 30rpx;
+}
+
+.view_top10{
+  margin-top: 10rpx;
+}
+
+.view_bottomborder{
+  border-bottom: 5rpx solid#e0e3da;
+}
+
+.padding10 {
+  padding:10rpx 0 10rpx 0;
+}
+
+ /* 侧滑栏 */  
+.page_tab {  
+  height: 100%;  
+  left: 70%;
+  width: 750rpx;  
+  position: fixed;/*相对于浏览器窗口进行定位*/
+  background-color: white;
+  z-index: 0;  
+}  
+
+/* 遮罩层 */  
+.bg {    
+  display: none;    
+  position: fixed;    
+  top: 0%;    
+  right: 30%;    
+  width: 100%;    
+  height: 100%;    
+  background-color: #d0d0d0;    
+  z-index: 1001;    /*一旦显示需要覆盖所有页面*/
+  opacity: 0.70;    /*设置元素的不透明级别*/
+  filter: alpha(opacity=70);    /*滤镜*/
+}
+
+ /* 搜索结果 */  
+.searchResult {  
+  height: 100%;  
+  top: 80rpx;
+  width: 750rpx;  
+  position: absolute;/*相对于浏览器窗口进行定位*/
+  background-color: white;
+  z-index: 2;  
+}  

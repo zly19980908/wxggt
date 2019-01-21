@@ -1,4 +1,307 @@
-<form bindsubmit="formSubmit">
-<view>HelloWorld!</view> 
-<button form-type='submit'>Submit</button>
-</form>
+<view class="main" style="{{translate}}">
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input type='text' focus="{{focus}}" confirm-type='send' class="" bindinput="showResult" placeholder="请输入关键字" value="{{searchValue}}" />
+      </view>
+    </view>
+    <view class='sousuo' bindtap='bindViewTap'>搜索</view>
+  </view>
+  <view class="searchResult" style='display:{{redisplay}}'>
+    <block wx:for='{{resultText}}'>
+      <view>
+        {{item}}
+      </view>
+    </block>
+  </view>
+  <view class='search_row'>
+    <view class="{{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">课程</view>
+    <view class="{{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">微视</view>
+    <view class="{{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">问答</view>
+    <view class="{{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">音频</view>
+    <view style="color:#d0d0d0;margin-left:40rpx;margin-right:40rpx">|</view>
+    <view bindtap="showView">筛选</view>
+  </view>
+  <view class="text_recommended">{{swiperText[currentTab]}}</view>
+  <!--根据滑动页面的index修改标题-->
+  <view class="divLine"></view>
+  <swiper current="{{currentTab}}" bindchange="swiperTab">
+    <swiper-item>
+      <scroll-view scroll-x='false' scroll-y='true'>
+        <!--视频页-->
+        <view class="video_column">
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName\n</text>
+              <view class="view_row">
+                <image src="../../image/star.jpg"></image>
+                <text decode='{{true}}' space='emsp'> Traffic</text>
+              </view>
+            </view>
+            <view class="video_price">
+              ￥19.00
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName\n</text>
+              <view class="view_row">
+                <image src="../../image/star.jpg"></image>
+                <text decode='{{true}}' space='emsp'> Traffic</text>
+              </view>
+            </view>
+            <view class="video_price">
+              ￥19.00
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName\n</text>
+              <view class="view_row">
+                <image src="../../image/star.jpg"></image>
+                <text decode='{{true}}' space='emsp'> Traffic</text>
+              </view>
+            </view>
+            <view class="video_price">
+              ￥19.00
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/star.jpg"></image>
+                <text decode='{{true}}' space='emsp'> Traffic</text>
+              </view>
+            </view>
+            <view class="video_price">
+              ￥19.00
+            </view>
+          </view>
+        </view>
+        <view class="video_nextpage">
+          更多64篇视频>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-x='false' scroll-y='true'>
+        <!--小视频页-->
+        <view class="video_column">
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/video.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              36个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/video.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              36个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/video.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              36个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/video.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              36个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/video.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              36个赞
+            </view>
+          </view>
+        </view>
+        <view class="video_nextpage">
+          更多64篇小视频>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y='true'>
+        <!--讨论页-->
+        <view class="video_column">
+          <view class="view_column view_bottomborder">
+            <text class="text_gray text_42">什么是中基？</text>
+            <text class="text_gray text_36">人们为什么要学中基呢？中基有什么好的呢？</text>
+            <view class="view_top10">
+              <image style="height:300rpx;width:100%;" src="../../image/test.jpg"></image>
+              <view class="padding10 text_30 text_gray">
+                阅读数 25 | 评论数 13
+              </view>
+            </view>
+          </view>
+          <view class="view_column view_bottomborder">
+            <text class="text_gray text_42">简述那个些年被中基伤害过的事件？你又想起来什么呢，什么呢，什么呢？</text>
+            <view class="padding10 text_30 text_gray">
+              阅读数 30 | 评论数 12
+            </view>
+          </view>
+          <view class="view_column view_bottomborder">
+            <text class="text_gray text_42">自己攒钱去西藏交孩子们写代码，可以吗？</text>
+            <view class="padding10 text_30 text_gray">
+              阅读数 28 | 评论数 9
+            </view>
+          </view>
+        </view>
+        <view class="video_nextpage">
+          更多68篇讨论>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-x='false' scroll-y='true'>
+        <!--音频页-->
+        <view class="video_column">
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/listen.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              30个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/listen.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              30个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/listen.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              30个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/listen.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              30个赞
+            </view>
+          </view>
+          <view class="video_row">
+            <view class="video_img">
+              <image src="../../image/test.jpg" mode='aspectFit'></image>
+            </view>
+            <view class="video_detail">
+              <text decode='{{true}}' space='emsp'>CourseName\nTeacherName</text>
+              <view class="view_row">
+                <image src="../../image/listen.jpg"></image>
+                <text> Traffic</text>
+              </view>
+            </view>
+            <view class="svideo_like">
+              30个赞
+            </view>
+          </view>
+        </view>
+        <view class="video_nextpage">
+          更多64篇音频>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+<!--遮挡，点击侧滑栏收回-->
+<view class="bg" style='display:{{display}}' bindtap='showMain'></view>
+<!--侧滑栏-->
+<view class="page_tab">你是认真的吗</view>

@@ -1,12 +1,38 @@
 Page({
-  data: {
+  data: {//变量只小写
+    courseResult: 
+    [
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', price: '￥19.00' }, 
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', price: '￥19.00' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', price: '￥19.00' }, 
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', price: '￥19.00' }
+    ],
+    videoResult:
+    [
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '34' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '35' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '36' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '37' }
+    ],
+    topicResult:
+    [
+      { topicDetail: '什么是中基?\n人们为什么要学中基呢？中基有什么好的呢？', viewCount: 25, pv: 13, image:'../../image/test.jpg'},
+      { topicDetail: '简述那个些年被中基伤害过的事件？你又想起来什么呢，什么呢，什么呢？', viewCount:30, pv:12,image:''},
+      { topicDetail: '自己攒钱去西藏交孩子们写代码，可以吗？', viewCount:28, pv:9 , image:''}
+    ],
+    listenResult:
+    [
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '27' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '29' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '16' },
+      { image: '../../image/test.jpg', detail: 'CourseName\nTeacherName\n', traffic: 'Traffic', like: '37' }
+    ],
     redisplay:'none',
     display: 'none',
-    windowWidth: wx.getSystemInfoSync().windowWidth,
+    tabdisplay:'none',
     focus: false,
     currentTab: 0,
     swiperText: ["推荐课程", "优选微视", "讨论问答", "精彩音频"],
-    translate: '',
     resultText:['微信','微信小程序','微信小','微信程','微信序']
   },
   clickTab: function(e) { /*点击选项卡切换页面*/
@@ -30,14 +56,15 @@ Page({
     var that = this;
     that.setData({
       display: 'block',
-      translate: 'transform: translateX(' + (-this.data.windowWidth * 0.3) + 'px);' /* 旋转div，div水平平移量，translateY为竖直平移 */
+      tabdisplay:'block',
     })
   },
+  /*点击遮影收回测选框 */
   showMain: function() {
     var that = this;
     that.setData({
       display: 'none',
-      translate: ''
+      tabdisplay:'none',
     })
   },
   bindViewTap: function(e) {

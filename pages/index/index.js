@@ -15,6 +15,7 @@ Page({
       url: '../logs/logs'
     })
   },
+  //搜索页
   bindViewDemo:function(){
     wx.navigateTo({
       url: '../demo/demo',

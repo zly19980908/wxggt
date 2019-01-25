@@ -46,7 +46,7 @@
 }
 
 .search_row view {
-  margin: 20rpx 20rpx 0rpx 20rpx;
+  margin: 20rpx 25rpx 0rpx 20rpx;
   padding-bottom: 20rpx;
   text-align: center;
 }

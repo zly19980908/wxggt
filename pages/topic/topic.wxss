@@ -1,0 +1,100 @@
+@import "../demo/demo.wxss";
+/*左半椭圆视图*/
+.view_leftoval{
+  border-radius: 20px 0 0 20px;
+}
+/*右半椭圆视图*/
+.view_rightoval{
+  border-radius: 0 20px 20px 0;
+}
+/*筛选栏视图*/
+.head_view{
+  border: 2px solid #d0d0d0;
+  height: 7vh;
+  width: 200rpx;
+  text-align: center;
+  padding-top: 2vh;
+}
+/*筛选栏样式*/
+.head_row{
+  display: flex;
+  flex-direction: row;
+  margin: 25rpx 0 25rpx 0;
+}
+
+/*话题主页样式*/
+.topicmain{
+  margin: 0 25rpx 0 25rpx;
+}
+/*话题内容样式*/
+.topic_content{
+  border: 2px solid #d0d0d0;
+  margin-bottom: 25rpx;
+}
+/*圆形头像*/
+.avatar{
+  width:120rpx;
+  height:120rpx;
+  margin:20rpx;
+  border-radius:50%;
+}
+
+/*话题详细*/
+.topic_detail{
+  margin: 0 20rpx 0 20rpx;
+  width:650rpx;
+  height:20vh;
+  overflow:hidden; /*超出一行文字自动隐藏*/
+}
+
+/*话题照片*/
+.topic_image{
+  margin: 20rpx 0 20rpx 0;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+
+/*话题热度图标上半部分*/
+.hot_head{
+  width: 80rpx;
+  height: 30rpx;
+  margin-left: 575rpx;
+  z-index: 2;
+}
+/*话题热度图标下半部分*/
+.hot_icon{
+  width: 80rpx;
+  height:80rpx;
+  margin-left: 200rpx;
+  z-index: 1;
+}
+
+/*点赞/评论/分享*/
+.topic_action{
+  margin-left: 280rpx;
+  margin-bottom: 20rpx;
+  font-size: 36rpx;
+}
+.topic_action image{
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+/*无边框按钮*/
+button::after{
+  border:none;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+/*发布话题样式*/
+.openTalk{
+  margin: 10rpx 0 0 30rpx;
+  width:80rpx;
+  height:60rpx;
+}

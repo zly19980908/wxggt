@@ -1,0 +1,55 @@
+ <view class='page_row' bindtap="suo">
+ <image src='../../image/opentalk.png' class="openTalk"></image>
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" style='margin-left:120rpx;' size='20' type='search'></icon>
+        <input type='text' focus="{{focus}}" confirm-type='send' class="" bindinput="showResult" bindblur="closeResult" placeholder="请输入关键字" value="{{searchValue}}" />
+      </view>
+    </view>
+    <view class='sousuo' bindtap='bindViewTap'>搜索</view>
+    <view class="searchResult" style='display:{{redisplay}}'>
+      <block wx:for='{{resultText}}'>
+        <view>
+          {{item}}
+        </view>
+      </block>
+    </view>
+  </view>
+<view class='topicmain view_column'>
+  <view class="head_row">
+    <view class="head_view view_leftoval" style='color:{{color[0]}}' id="0" bindtap="bindChangView">综合</view>
+    <view class="head_view" style="border-left: 0;color:{{color[1]}}" id="1" bindtap="bindChangView">最新</view>
+    <view class="head_view" style="border-left: 0;color:{{color[2]}}" id="2" bindtap="bindChangView">最热</view>
+    <view class="head_view view_rightoval" id="3"  style="border-left: 0;color:{{color[3]}}" bindtap="bindChangView">关注</view>
+  </view>
+  <scroll-view>
+  <block wx:for="{{topicResult}}">
+  <view class="view_column topic_content">
+    <view style='display:flex;flex-direction:row;'>
+      <image src="../../image/test.jpg" class="avatar"></image>
+      <view class="view_column" style='margin-top:20rpx;'>
+        <view class="text_42">{{item.nick}}</view>
+        <view class="view_row">
+          <image src="../../image/time.jpg" style='width:36rpx;height:36rpx;margin:5rpx 5rpx 0 5rpx;'></image>
+          <view class="text_36" style='color:#d0d0d0'>{{item.time}}前</view>
+        </view>
+      </view>
+     <image src="../../image/new1.png" class="hot_icon"></image>
+    </view>
+    <view class="text_42 topic_detail">
+    {{item.topicdetail}}
+    </view>
+    <view class="view_row topic_image">
+      <image src="../../image/test.jpg" style='width:200rpx;height:160rpx;margin:0rpx 20rpx 0 20rpx;'></image>
+      <image src="../../image/test.jpg" style='width:200rpx;height:160rpx;margin:0rpx 20rpx 0 20rpx;'></image>
+      <image src="../../image/test.jpg" style='width:200rpx;height:160rpx;margin:0rpx 20rpx 0 20rpx;'></image>
+    </view>
+    <view class="view_row topic_action">
+      <image src="../../image/share.jpg"></image>{{item.share}}
+      <image src="../../image/talk.jpg"></image>{{item.pv}}
+      <image src="../../image/like.jpg"></image>{{item.like}}
+    </view>
+  </view>
+  </block>
+  </scroll-view>
+</view>

@@ -76,15 +76,23 @@ Page({
   formSubmit: function(e) {
     console.log('form发生了submit事件')
   },
+  //输入时自动匹配
   showResult:function(e){
     var that = this;
     var s = e.detail.value.split('');//将输入得字符串分割成一个个字符
     var length = s.length;//数组长度
     console.log(s[length-1]);
-    if (s[length-1] === '微'){//判断输入的最后一个字
+    if (s[length-1] == '微'){//判断输入的最后一个字
     that.setData({
       redisplay: 'block'
     });
     }
+  },
+   //输入完成下方消失
+  closeResult:function(e){
+    var that = this;
+    that.setData({
+      redisplay:'none',
+    });
   }
 })

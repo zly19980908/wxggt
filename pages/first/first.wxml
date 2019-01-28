@@ -9,8 +9,9 @@
     </view>
   </view>
 </view>
-<view class="swper">
   <!-- 海报-->
+<view class="swper">
+
   <swiper indicator-dots='true' autoplay='true' interval='2000' class='swper'>
     <swiper-item class="swper-item">
       <image src='../../image/test1.jpg' class='swperimage'></image>

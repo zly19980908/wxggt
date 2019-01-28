@@ -1,5 +1,7 @@
 {
   "pages": [
+   
+    "pages/smallVideo/smallVideo",
     "pages/audio/audio",
     "pages/first/first",
     "pages/index/index",

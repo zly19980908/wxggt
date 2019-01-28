@@ -1,9 +1,4 @@
 /* pages/first/first.wxss */
-
-.searchinput {
-  background-color: #5cacee;
-}
-
 .bg {
   background-color: #5cacee;
 }

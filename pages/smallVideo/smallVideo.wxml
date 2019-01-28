@@ -1,0 +1,35 @@
+<!--搜索栏-->
+<view class='bg'>
+  <image src='../../image/smallVideo/add.png'></image>
+  <view class="search">
+    <view class="search_arr">
+      <view class='searchcion'>
+        <icon class="" size='40rpx' type='search'></icon>
+      </view>
+      <input class="searchinput" />
+    </view>
+
+  </view>
+  <text>搜索</text>
+</view>
+<!--分类选择-->
+<view class="select">
+  <button>推荐</button>
+  <button>中基</button>
+  <button>中症</button>
+  <button>中药</button>
+</view>
+<!--小视频的播放-->
+<view class='smallVideo'>
+  <video src='../../testvideo/test1.mp4'></video>
+  <view class='text1'>11111111111111111111111111</view>
+  <view class='view1'>
+    <image src='../../image/1.png' class='view1-image'></image>
+    <view class='view1-viewText'>name11111</view>
+    <view class='view1-viewImage'>
+      <image src='../../image/smallVideo/3.png' class='view1-image1'></image>
+      <image src='../../image/smallVideo/share.png' class='view1-image1'></image>
+      <image src='../../image/smallVideo/appreciate.png' class='view1-image1'></image>
+    </view>
+  </view>
+</view>

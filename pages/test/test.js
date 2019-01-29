@@ -9,7 +9,7 @@ Page({
   },
   bindtest: function () {
     wx.request({
-      url: 'http://localhost:8080/wxggt/com.wx.servlet/wxtest',
+      url: 'https://localhost:8080/wxggt/wxtest',
       data: {
         username: 'admin',
         password: 'admin'
@@ -31,7 +31,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const app = getApp();
+    var that = this;
+    app.changeTabBar(); 
   },
 
   /**

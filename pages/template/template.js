@@ -13,7 +13,7 @@ App({
         selected:true,
       },
       {
-        pagePath: "../logs/logs",
+        pagePath: "../test/test",
         text: "中医论坛",
         iconPath: "../../image/talk1.png",
         selectedIconPath: "../../image/talk2.png",

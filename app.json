@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/test/test",
+    
     "pages/first/first",
     "pages/smallVideo/smallVideo",
     "pages/audio/audio",
     "pages/index/index",
     "pages/logs/logs",
+    "pages/test/test",
     "pages/template/template"
+    
     
   ],
   "window": {

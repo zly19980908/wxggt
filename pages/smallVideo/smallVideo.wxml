@@ -9,7 +9,7 @@
       <view class='searchcion'>
         <icon class="" size='40rpx' type='search'></icon>
       </view>
-      <input class="searchinput" />
+      <input class="searchinput" value='111111111111111111111111111111' placeholder='111111111111111111'/>
     </view>
 
   </view>

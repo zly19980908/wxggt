@@ -1,5 +1,4 @@
-
-
+<!--导入导航栏-->
 <import src="../template/template.wxml" />
 <template is="tabbar" data="{{tabbar}}"/>
 <view class='bg'>
@@ -9,7 +8,7 @@
       <view class='searchcion'>
         <icon class="" size='40rpx' type='search'></icon>
       </view>
-      <input class="searchinput" />
+      <input class="searchinput" focus='true' value='11111111' placeholder='11111'/>
     </view>
   </view>
 </view>

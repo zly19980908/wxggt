@@ -1,102 +1,42 @@
-// pages/template/template.js
-Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-  
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
 App({
   tabbar: {
-    color: "#242424",
-    selectedColor: "#fa8582",
+    backgroundColor: "white",
+    color: "#dddddd",
+    selectedColor: "#3cc51f",
     backgroundColor: "#ffffff",
-    borderStyle: "#d7d7d7",
-    list: [
-      {
-        pagePath: "/pages/index/index",
+    borderStyle: "black",
+    list: [{
+        pagePath: "../first/first",
         text: "首页",
-        iconPath: "../../assets/images/tab1.png",
-        selectedIconPath: "../../assets/images/tab1_cur.png",
-        selected: true
+        iconPath: "../../image/index1.png",
+        selectedIconPath: "../../image/index2.png",
+        selected:true
+        
       },
       {
-        pagePath: "/pages/fabu/fabu",
-        text: "发布",
-        iconPath: "../../assets/images/tab_new.png",
-        selectedIconPath: "../../assets/images/tab_new.png",
+        pagePath: "../first/first",
+        text: "中医论坛",
+        iconPath: "../../image/talk1.png",
+        selectedIconPath: "../../image/talk2.png",
+          },
+      {
+        pagePath: "../first/first",
+        text: "我的学习",
+        iconPath: "../../image/mystudy1.png",
+        selectedIconPath: "../../image/mystudy2.png",
         selected: false
       },
       {
-        pagePath: "/pages/user/user",
-        text: "我的",
-        iconPath: "../../assets/images/tab4.png",
-        selectedIconPath: "../../assets/images/tab4_cur.png",
+        pagePath: "../first/first",
+        text: "个人中心",
+        iconPath: "../../image/person1.png",
+        selectedIconPath: "../../image/person2.png",
         selected: false
       }
     ],
     position: "bottom"
   },
-  changeTabBar: function () {
+  changeTabBar: function() {
     var _curPageArr = getCurrentPages();
     var _curPage = _curPageArr[_curPageArr.length - 1];
     var _pagePath = _curPage.__route__;
@@ -108,7 +48,7 @@ App({
       console.log(_pagePath + '--' + tabBar.list[i].pagePath)
       tabBar.list[i].selected = false;
       if (tabBar.list[i].pagePath == _pagePath) {
-        tabBar.list[i].selected = true;//根据页面地址设置当前页面状态  
+        tabBar.list[i].selected = true; //根据页面地址设置当前页面状态  
       }
     }
     _curPage.setData({

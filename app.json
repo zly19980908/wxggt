@@ -1,9 +1,10 @@
 {
   "pages": [
    
+    "pages/first/first",
     "pages/smallVideo/smallVideo",
     "pages/audio/audio",
-    "pages/first/first",
+    
     "pages/index/index",
     "pages/logs/logs"
     
@@ -30,7 +31,7 @@
         "selectedIconPath": "image/tabbar-main.png"
       },
       {
-        "pagePath": "pages/first/first",
+        "pagePath": "pages/smallVideo/smallVideo",
         "text": "中医论坛",
         "iconPath": "image/1.png",
         "selectedIconPath": "image/1.png"

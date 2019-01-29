@@ -33,3 +33,16 @@
     </view>
   </view>
 </view>
+<view class='smallVideo'>
+  <video src='../../testvideo/test1.mp4'></video>
+  <view class='text1'>11111111111111111111111111</view>
+  <view class='view1'>
+    <image src='../../image/1.png' class='view1-image'></image>
+    <view class='view1-viewText'>name11111</view>
+    <view class='view1-viewImage'>
+      <image src='../../image/smallVideo/3.png' class='view1-image1'></image>
+      <image src='../../image/smallVideo/share.png' class='view1-image1'></image>
+      <image src='../../image/smallVideo/appreciate.png' class='view1-image1'></image>
+    </view>
+  </view>
+</view>

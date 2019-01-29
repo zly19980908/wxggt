@@ -1,3 +1,6 @@
+<!--自定义导航栏-->
+<import src="../template/template.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>
 <!--搜索栏-->
 <view class='bg'>
   <image src='../../image/smallVideo/add.png'></image>
@@ -19,9 +22,10 @@
   <button>中症</button>
   <button>中药</button>
 </view>
+
 <!--小视频的播放-->
 <view class='smallVideo'>
-  <video src='../../testvideo/test1.mp4'></video>
+  <video src=''></video>
   <view class='text1'>11111111111111111111111111</view>
   <view class='view1'>
     <image src='../../image/1.png' class='view1-image'></image>
@@ -34,7 +38,7 @@
   </view>
 </view>
 <view class='smallVideo'>
-  <video src='../../testvideo/test1.mp4'></video>
+  <video src=''></video>
   <view class='text1'>11111111111111111111111111</view>
   <view class='view1'>
     <image src='../../image/1.png' class='view1-image'></image>

@@ -1,10 +1,12 @@
 // pages/first/first.js
+
 Page({
   data: {
     bordercolor: "rgb(211, 66, 22)",
     v1: "view3text1",
     v2: "",
     v3: "",
+    tabbar: {},
   },
   changeText: function(event) {//热门话题控制
     var that=this;
@@ -36,6 +38,16 @@ Page({
     }
 
   },
+  //跳转到小视频主页面
+  smallVideo: function()
+  {
+    
+    wx.navigateTo({
+      url: '../smallVideo/smallVideo'
+    }),
+    console.log("1")
+
+  },
   onPullDownRefresh: function () {
 
     wx.showNavigationBarLoading() //在标题栏中显示加载
@@ -61,7 +73,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    const app = getApp();
     var that = this;
+    app.changeTabBar(); 
+    
   },
 
   /**

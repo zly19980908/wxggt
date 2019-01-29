@@ -1,3 +1,7 @@
+
+
+<import src="../template/template.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>
 <view class='bg'>
   <!--搜索栏-->
   <view class="search">
@@ -58,8 +62,8 @@
   </view>
   <view class='view2'>
     <view>
-      <video src='../../testvideo/test1.mp4'></video>
-      <video src='../../testvideo/test2.mp4'></video>
+      <video src=''></video>
+      <video src=''></video>
     </view>
     <view>
       <view>
@@ -111,8 +115,8 @@
     <text class='view1-text1'>更多</text>
       <view class='view2'>
     <view>
-      <video src='../../testvideo/test1.mp4'></video>
-      <video src='../../testvideo/test2.mp4'></video>
+      <video src=''></video>
+      <video src=''></video>
     </view>
     <view>
       <view>
@@ -127,9 +131,9 @@
   <view class='view1'>
     <image src='../../image/11.png'></image>
     <text>精彩小视频</text>
-    <text class='view1-text2'>进入专区</text>
-    <video src='../../testvideo/test1.mp4' class='video1'></video>
+    <text class='view1-text2' bindtap='smallVideo'>进入专区</text>
+    <video src='' class='video1'></video>
  
-    <video src='../../testvideo/test2.mp4' class='video1'></video>
+    <video src='' class='video1'></video>
   </view>
 </view>

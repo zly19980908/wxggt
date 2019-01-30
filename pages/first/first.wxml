@@ -1,138 +1,136 @@
 <!--导入导航栏-->
 <import src="../template/template.wxml" />
-<template is="tabbar" data="{{tabbar}}"/>
+<template is="tabbar" data="{{tabbar}}" />
 <view class='bg'>
   <!--搜索栏-->
   <view class="search">
     <view class="df search_arr">
-      <view class='searchcion'>
-        <icon class="" size='40rpx' type='search'></icon>
-      </view>
-      <input class="searchinput" focus='true' value='11111111' placeholder='11111'/>
+      <icon class="searchcion" type='search' size='20'></icon>
+      <input type='text' focus="{{focus}}" confirm-type='send' class="" bindinput="showResult" bindblur="closeResult" placeholder="请输入关键字" value="{{searchValue}}" />
+    </view>
     </view>
   </view>
-</view>
   <!-- 海报-->
-<view class="swper">
+  <view class="swper">
 
-  <swiper indicator-dots='true' autoplay='true' interval='2000' class='swper'>
-    <swiper-item class="swper-item">
-      <image src='../../image/test1.jpg' class='swperimage'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='../../image/test.jpg' class='swperimage'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='../../image/test2.jpg' class='swperimage'></image>
-    </swiper-item>
-  </swiper>
-</view>
-<!--中间按钮-->
-<view class="window_view">
-  <scroll-view class="scroll-view_H" scroll-x="true">
-    <view id="local" class="scroll-view-item_H local">
-      <view class='box'>
-        <image src='../../image/button1.png' class='boximage'></image>
-        <text class='boxtext'>video</text> </view>
-    </view>
-    <view id="img" class="scroll-view-item_H img">
-      <view class='box'>
-        <image src='../../image/button4.png'></image>
-        <text>FM</text> </view>
-    </view>
-    <view id="audio" class="scroll-view-item_H audio">
-      <view class='box'>
-        <image src='../../image/button3.png'></image>
-        <text>active</text> </view>
-    </view>
-    <view id="qrcode" class="scroll-view-item_H qrcode">
-      <view class='box'>
-        <image src='../../image/button2.png'></image>
-        <text>news</text> </view>
-    </view>
-  </scroll-view>
-</view>
-<!--视屏区 -->
-<view class='viewcontrl'>
-  <view class='view1'>
-    <image src='../../image/11.png'></image>
-    <text>精彩课程</text>
-    <text class='view1-text1'>更多</text>
+    <swiper indicator-dots='true' autoplay='true' interval='2000' class='swper'>
+      <swiper-item class="swper-item">
+        <image src='../../image/test1.jpg' class='swperimage'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../image/test.jpg' class='swperimage'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../image/test2.jpg' class='swperimage'></image>
+      </swiper-item>
+    </swiper>
   </view>
-  <view class='view2'>
-    <view>
-      <video src=''></video>
-      <video src=''></video>
+  <!--中间按钮-->
+  <view class="window_view">
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view id="local" class="scroll-view-item_H local">
+        <view class='box'>
+          <image src='../../image/button1.png' class='boximage'></image>
+          <text class='boxtext'>video</text> </view>
+      </view>
+      <view id="img" class="scroll-view-item_H img">
+        <view class='box'>
+          <image src='../../image/button4.png'></image>
+          <text>FM</text> </view>
+      </view>
+      <view id="audio" class="scroll-view-item_H audio">
+        <view class='box'>
+          <image src='../../image/button3.png'></image>
+          <text>active</text> </view>
+      </view>
+      <view id="qrcode" class="scroll-view-item_H qrcode">
+        <view class='box'>
+          <image src='../../image/button2.png'></image>
+          <text>news</text> </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!--视屏区 -->
+  <view class='viewcontrl'>
+    <view class='view1'>
+      <image src='../../image/11.png'></image>
+      <text>精彩课程</text>
+      <text class='view1-text1'>更多</text>
     </view>
-    <view>
+    <view class='view2'>
       <view>
-        <text class="text1">迷人的香水</text>
-        <text class="text2">吃货</text>
+        <video src=''></video>
+        <video src=''></video>
+      </view>
+      <view>
+        <view>
+          <text class="text1">迷人的香水</text>
+          <text class="text2">吃货</text>
+        </view>
       </view>
     </view>
   </view>
-</view>
-<!--话题区-->
-<view class='viewcontrl1'>
-  <view class='view1'>
-    <image src='../../image/11.png'></image>
-    <text>热门话题</text>
+  <!--话题区-->
+  <view class='viewcontrl1'>
+    <view class='view1'>
+      <image src='../../image/11.png'></image>
+      <text>热门话题</text>
+    </view>
+    <view class='view3'>
+      <text id="v1" bindtap='changeText' class='{{v1}}'>古籍top5</text>
+      <text id="v2" bindtap='changeText' class='{{v2}}'>医案top5</text>
+      <text id="v3" bindtap='changeText' class='{{v3}}'>方剂top5</text>
+    </view>
+    <view class='view4'>
+      <image src='../../image/top1.png'></image>
+      <text>素问</text>
+    </view>
+    <view class='view4'>
+      <image src='../../image/top2.png'></image>
+      <text>伤寒论</text>
+    </view>
+    <view class='view4'>
+      <image src='../../image/top3.png'></image>
+      <text>四圣兴源</text>
+    </view>
+    <view class='view4'>
+      <image src='../../image/top4.png'></image>
+      <text>本草钢木</text>
+    </view>
+    <view class='view4'>
+      <image src='../../image/top5.png'></image>
+      <text>金匮要约</text>
+    </view>
+    <view>
+      <text class='view4_text'>查看更多排行榜>></text>
+    </view>
   </view>
-  <view class='view3'>
-    <text id="v1" bindtap='changeText' class='{{v1}}'>古籍top5</text>
-    <text id="v2" bindtap='changeText' class='{{v2}}'>医案top5</text>
-    <text id="v3" bindtap='changeText' class='{{v3}}'>方剂top5</text>
-  </view>
-  <view class='view4'>
-    <image src='../../image/top1.png'></image>
-    <text>素问</text>
-  </view>
-  <view class='view4'>
-    <image src='../../image/top2.png'></image>
-    <text>伤寒论</text>
-  </view>
-  <view class='view4'>
-    <image src='../../image/top3.png'></image>
-    <text>四圣兴源</text>
-  </view>
-  <view class='view4'>
-    <image src='../../image/top4.png'></image>
-    <text>本草钢木</text>
-  </view>
-  <view class='view4'>
-    <image src='../../image/top5.png'></image>
-    <text>金匮要约</text>
-  </view>
-  <view>
-    <text class='view4_text'>查看更多排行榜>></text>
-  </view>
-</view>
-<view class='viewcontrl'>
-  <view class='view1'>
-    <image src='../../image/11.png'></image>
-    <text>直播回顾区</text>
-    <text class='view1-text1'>更多</text>
+  <view class='viewcontrl'>
+    <view class='view1'>
+      <image src='../../image/11.png'></image>
+      <text>直播回顾区</text>
+      <text class='view1-text1'>更多</text>
       <view class='view2'>
-    <view>
-      <video src=''></video>
-      <video src=''></video>
-    </view>
-    <view>
-      <view>
-        <text class="text1">迷人的香水</text>
-        <text class="text2">吃货</text>
+        <view>
+          <video src=''></video>
+          <video src=''></video>
+        </view>
+        <view>
+          <view>
+            <text class="text1">迷人的香水</text>
+            <text class="text2">吃货</text>
+          </view>
+        </view>
       </view>
     </view>
+  </view>
+  <view class=''>
+    <view class='view1'>
+      <image src='../../image/11.png'></image>
+      <text>精彩小视频</text>
+      <text class='view1-text2' bindtap='smallVideo'>进入专区</text>
+      <video src='' class='video1'></video>
+
+      <video src='' class='video1'></video>
     </view>
   </view>
-</view>
-<view class=''>
-  <view class='view1'>
-    <image src='../../image/11.png'></image>
-    <text>精彩小视频</text>
-    <text class='view1-text2' bindtap='smallVideo'>进入专区</text>
-    <video src='' class='video1'></video>
- 
-    <video src='' class='video1'></video>
-  </view>
-</view>

@@ -9,7 +9,7 @@ Page({
   },
   bindtest: function () {
     wx.request({
-      url: 'https://localhost:8080/wxggt/wxtest',
+      url: 'http://localhost:8080/wxggt/wxtest',
       data: {
         username: 'admin',
         password: 'admin'

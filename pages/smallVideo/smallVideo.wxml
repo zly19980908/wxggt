@@ -1,18 +1,16 @@
 <!--自定义导航栏-->
 <import src="../template/template.wxml" />
-<template is="tabbar" data="{{tabbar}}"/>
+<template is="tabbar" data="{{tabbar}}" />
 <!--搜索栏-->
 <view class='bg'>
   <image src='../../image/smallVideo/add.png'></image>
   <view class="search">
-    <view class="search_arr">
-      <view class='searchcion'>
-        <icon class="" size='40rpx' type='search'></icon>
-      </view>
-      <input class="searchinput" value='111111111111111111111111111111' placeholder='111111111111111111'/>
+    <view class="df search_arr">
+      <icon class="searchcion"  type='search'></icon>
+      <input type='text' focus="{{focus}}" confirm-type='send' class="" bindinput="showResult" bindblur="closeResult" placeholder="请输入关键字" value="{{searchValue}}" />
     </view>
-
   </view>
+
   <text>搜索</text>
 </view>
 <!--分类选择-->

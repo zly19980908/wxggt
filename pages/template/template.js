@@ -47,7 +47,6 @@ App({
     var tabBar = this.tabbar;
     for (var i = 0; i < tabBar.list.length; i++) {
       tabBar.list[i].selected = false;
-      console.log(tabBar.list[i].pagePath.slice(2));
       if (tabBar.list[i].pagePath.slice(2)==_pagePath.slice(6)) {
         tabBar.list[i].selected = true; //根据页面地址设置当前页面状态 
       }
